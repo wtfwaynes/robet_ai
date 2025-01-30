@@ -3,6 +3,10 @@ import os
 import openai
 import  uuid
 
+from sqlalchemy import create_engine, Column, String, Boolean
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
 openai.api_key = "<open-ai-key>"
 
 Base = declarative_base()
